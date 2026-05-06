@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Wróć na stronę główną</a>
+
+    <form action="#" method="POST">
+
+
+    <label for="imie">Imię i nazwisko:</label>
+    <input 
+      type="text" 
+      id="imie" 
+      name="imie" 
+      placeholder="np. Jan Kowalski" 
+      required>
+
+    <label for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="np. jan@example.com" 
+      required>
+
+    <label for="telefon">Numer telefonu:</label>
+    <input 
+      type="tel" 
+      id="telefon" 
+      name="telefon" 
+      placeholder="np. 123456789" 
+      pattern="[0-9]{9}">
+
+
+    <label for="data">Data urodzenia:</label>
+    <input 
+      type="date" 
+      id="data" 
+      name="data">
+
+
+    <label for="kolor">Ulubiony kolor:</label>
+    <input 
+      type="color" 
+      id="kolor" 
+      name="kolor" 
+      value="#ff0000">
+
+    <label for="wiek">Wiek:</label>
+    <input 
+      type="number" 
+      id="wiek" 
+      name="wiek" 
+      placeholder="np. 25" 
+      min="13" 
+      max="100">
+
+    <fieldset>
+      <legend>Płeć:</legend>
+
+      <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+      <label for="mezczyzna">Mężczyzna</label>
+
+      <input type="radio" id="kobieta" name="plec" value="kobieta">
+      <label for="kobieta">Kobieta</label>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Zainteresowania:</legend>
+
+      <input type="checkbox" id="sport" name="zainteresowania" value="sport">
+      <label for="sport">Sport</label>
+
+      <input type="checkbox" id="muzyka" name="zainteresowania" value="muzyka">
+      <label for="muzyka">Muzyka</label>
+
+      <input type="checkbox" id="ksiazki" name="zainteresowania" value="ksiazki">
+      <label for="ksiazki">Książki</label>
+
+      <input type="checkbox" id="technologia" name="zainteresowania" value="technologia">
+      <label for="technologia">Technologia</label>
+    </fieldset>
+
+
+    <label for="kraj">Kraj:</label>
+    <select id="kraj" name="kraj">
+      <option value="">-- Wybierz kraj --</option>
+      <option value="pl">Polska</option>
+      <option value="de">Niemcy</option>
+      <option value="fr">Francja</option>
+      <option value="gb">Wielka Brytania</option>
+      <option value="us">USA</option>
+    </select>
+
+
+    <label for="wiadomosc">Wiadomość:</label>
+    <textarea 
+      id="wiadomosc" 
+      name="wiadomosc" 
+      rows="5" 
+      cols="40"
+      placeholder="Napisz swoją wiadomość...">
+    </textarea>
+    <button type="submit">Wyślij formularz</button>
+
+  </form>
+</body>
+</html>
